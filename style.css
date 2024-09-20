@@ -1,0 +1,520 @@
+@import url('https://fonts.cdnfonts.com/css/sparky-stones');
+@import url('https://fonts.cdnfonts.com/css/minagi-bristone');
+@import url('https://fonts.cdnfonts.com/css/efco-godfrey');
+@import url('https://fonts.cdnfonts.com/css/hussar-4');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hussar', sans-serif;
+    background-color: #252525;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(172, 172, 172);
+    /* couleur du curseur */
+}
+
+
+
+nav {
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.85);
+    left: 0;
+    top: 0;
+    height: 6vw;
+    font-size: 2vw;
+    transition: 0.3s;
+
+}
+
+nav a {
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    margin: 1%;
+    margin-top: 2%;
+    margin-left: 0;
+    margin-right: 5%;
+    font-family: 'Hussar', sans-serif;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #4c4c4c;
+}
+
+nav img {
+    width: 6vw;
+    margin: 1%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 0;
+}
+
+#connexion {
+    border: 0.1rem solid rgb(231, 231, 231);
+    padding: 1% 2vh;
+    border-radius: 1.5rem;
+}
+
+.centrercolonne {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Hussar', sans-serif;
+    text-align: center;
+}
+
+#encadre {
+    border: 0.105vw solid #000000;
+    height: 8vh;
+    width: 12vw;
+    border-radius: 80px;
+    background-color: #4a4a4a;
+}
+
+
+
+.centrercolonne img {
+    width: 40%;
+    margin-top: 5%;
+}
+
+.description {
+
+    font-size: 2vw;
+    color: rgb(220, 220, 220);
+    font-family: 'Hussar', sans-serif;
+}
+
+.description strong {
+    font-size: 5vw;
+}
+
+.description button {
+    box-shadow: 0 10px 50px -10px #000000;
+    padding: 1% 2vh;
+    border-radius: 1.5rem;
+    background-color: #825656;
+    color: rgb(234, 234, 234);
+    font-size: 2vw;
+    margin-top: 5%;
+    font-family: 'Hussar', sans-serif;
+    margin-bottom: 5vh;
+    transition: 0.3s;
+}
+
+.description button:hover {
+    background-color: #b57f7f;
+}
+
+.espace {
+    width: 70vw;
+    height: 80vh;
+    margin-top: 8%;
+    display: flex;
+    box-shadow: 0 10px 50px -5px #000000;
+    position: fixed;
+}
+.espacevide{
+    width: 70vw;
+    height: 9vh;
+    margin-top: 8%;
+    display: flex;
+    box-shadow: 0 10px 50px -10px #000000;
+    position: fixed;
+}
+
+.categorie {
+    height: 9vh;
+    width: 70vw;
+    position: fixed;
+    box-shadow: 0 10px 50px -10px #000000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+}
+.slide{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.categorie button {
+    width: 14vw;
+    height: 85%;
+    border-radius: 20px;
+    background-color: #454545;
+    color: rgb(212, 212, 212);
+    font-size: 2rem;
+    font-family: 'Hussar', sans-serif;
+    margin: 0 0.45vw;
+    border: 3px solid black;
+    transition: 0.3s;
+margin-top: 0.7vh;
+}
+
+.categorie button:hover {
+    background-color: #727272;
+
+}
+
+.categorie .ajouter {
+
+    width: 5vw;
+    display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+padding-top: 1vh;
+position: sticky;
+z-index: 100;
+}
+
+
+
+.categorie input {
+    width: 60%;
+    height: 2.3vh;
+    border-radius: 15px;
+    background-color: #4a4a4a;
+    color: rgb(231, 231, 231);
+    font-size: 1vw;
+    font-family: 'Hussar', sans-serif;
+    margin-bottom: 0.1vh;
+    border: 3px solid black;
+    transition: 0.3s;
+ 
+    text-align: center;
+}
+
+.categorie .valider {
+    height: 4.2vh;
+    margin: 0;
+    width: 6vw;
+    font-size: 1.2vw;
+    border-radius: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.7vh;
+    background-color: rgb(60, 148, 57);
+    color: rgb(197, 195, 195);
+}
+
+.categorie .valider:hover {
+    background-color: rgb(25, 70, 24);
+    color: rgb(150, 150, 150);
+}
+.categorie .annuler {
+    width: 4.2vh;
+    height: 4.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+    text-align: center;
+    margin: 5px;
+    border-radius: 40px;
+    background-color: #690202;
+    color: rgb(197, 195, 195);
+}
+
+
+.aligne{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.3vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.site{
+    display: flex;
+    width: 100%;
+    height: 71vh;
+    margin-top: 9vh;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-bottom: 0;
+}
+
+.site button {
+    width: 40%;
+    margin: 2vh 1vw;
+    height: 10vh;
+    font-size: 2.7vw;
+    font-family: 'Hussar', sans-serif;
+    color: rgb(236, 236, 236);
+    border: 0;
+    box-shadow: 0 10px 50px -10px #000000;
+    border-radius: 100px;
+    transition: 0.4s;
+    background-color: #454545;
+   
+}
+
+.site .boitesuppr {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.site .boitesuppr button{
+    border-radius: 50px;
+}
+
+.site .suppr {
+    width: 4vw;
+    height: 4vw;
+    background-color: #690202;
+    color: rgb(29, 29, 29);
+}
+
+.site .suppr:hover {
+    background-color: #8b2020;
+    color: rgb(163, 162, 162);
+}
+
+.site button:hover {
+    background-color: #808080;
+    color: rgb(29, 29, 29);
+}
+
+
+
+.card {
+    width: 29vw;
+    height: 15vw;
+    border-radius: 8px;
+    margin: 2.5vh 1vw;
+    box-shadow: 0 10px 50px -10px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-size: 3.5vw;
+    font-family: 'Hussar', sans-serif;
+    margin: auto;
+}
+.card a{
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+}
+.card .content {
+    opacity: 0;
+    position: absolute;
+    transition: 0.4s ease-in-out;
+}
+
+
+
+.card .imgbox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.card .imgbox img {
+    width: 150%;
+    height: 100%;
+    transition: 0.4s ease-in-out;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    border: 20px solid white;
+    border-radius: inherit;
+    transition: 0.4s ease-in-out;
+
+}
+
+.card:hover img {
+    filter:
+        grayscale(0.4) brightness(0.4);
+}
+
+.card:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.card:hover .content {
+    scale: 1;
+    opacity: 1;
+}
+
+.site .boitesite {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 8vh;
+
+
+}
+
+.site .boitesite .creation {
+    width: 60%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px -10px #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 0;
+    margin: auto;
+   
+}
+
+.site .boitesite .creation input {
+    width: 70%;
+    height: 4vh;
+    border-radius: 15px;
+    background-color: #4a4a4a;
+    color: rgb(231, 231, 231);
+    font-size: 1.3vw;
+    font-family: 'Minagi Bristone', sans-serif;
+    margin: 0.9vh;
+    border: 3px solid black;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.site .boitesite .creation button {
+    width: 20%;
+    height: 4vh;
+    border-radius: 15px;
+    background-color: #6e6e6e;
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Hussar', sans-serif;
+    margin: 1vh 0.45vw;
+    border: 3px solid black;
+    transition: 0.3s;
+    box-shadow: 0 0 0 0 #000000;
+}
+
+
+.site .boitesite .creation .annuler{
+    width: 4.2vh;
+    height: 4.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+    text-align: center;
+    margin: 5px;
+    border-radius: 1.8rem;
+    background-color: #690202;
+    color: rgb(29, 29, 29);
+    
+}
+.site .boitesite .creation button:hover{
+    background-color: #963131;
+}
+.site .boitesite .creation .annuler:hover{
+    background-color: #8b2020;
+    color: rgb(163, 162, 162);
+}
+
+
+.site .boitesite .creation .inputimg{
+display: none;
+}
+.site .boitesite .creation .labelimg{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+    text-align: center;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #494848;
+    color: rgb(135, 135, 135);
+    font-size: 1.5vw;
+    font-family: 'Hussar', sans-serif;
+    border: 3px solid black;
+    transition: 0.3s;
+}
+.site .boiteaddsite{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh 0;
+   
+}
+.site .boitesite .cage .annuler{
+    width: 6.2vh;
+    height: 6.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+    text-align: center;
+    margin: 5px;
+    margin-left: 2vw;
+    background-color: #690202;
+    color: rgb(29, 29, 29);
+    border-radius: 20px;
+}
+.site .boitesite .cage .annuler:hover{
+    background-color: #8b2020;
+    color: rgb(163, 162, 162);
+    
+}
+.site .boitesite .cage{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh 0;
+padding-left: 2.8vw;
+margin-bottom: 5vh;
+   
+}
+.modenoir{
+margin-top: 20vh;
+}
