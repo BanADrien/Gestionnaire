@@ -28,7 +28,7 @@ ajouter.addEventListener('click', () => {
         //crée un input pour entrer le nom de la categorie
         let inputcategorie = document.createElement('input');
         inputcategorie.setAttribute('type', 'text');
-        inputcategorie.setAttribute('placeholder', 'Entrer nom');
+        inputcategorie.setAttribute('placeholder', 'Categorie');
         
         //crée un bouton pour valider
         let valider = document.createElement('button');
@@ -43,9 +43,10 @@ ajouter.addEventListener('click', () => {
         annuler.textContent = '✖';
 
         //mettre les elements au bon endroit
+        recadre.appendChild(inputcategorie);
         aligne.appendChild(valider);
         aligne.appendChild(annuler);
-        recadre.appendChild(inputcategorie);
+
 
         //mettre la verification a false
 
@@ -81,6 +82,12 @@ ajouter.addEventListener('click', () => {
                 supprcategorie.textContent = '✖';
                 supprcategorie.classList.add('suppr');
                 boitesuppr.appendChild(supprcategorie);
+
+                // nom de la categorie
+                let nomcategorie = document.createElement('h1');
+                nomcategorie.textContent = inputcategorie.value;
+                nomcategorie.classList.add('nomcategorie');
+                site.appendChild(nomcategorie);
 
                 //boite ou seront ranger les sites
                 let boitesite = document.createElement('div');
